@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tic Tac Toe Node.JS/WebSockets</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="main.js"></script>	
+	</head>
+	<body>
+		Server status: <span id="status"></span><br />
+		
+		
+		<div class="container">
+		  <div class="menu">
+			<h1>Tic - Tac - Toe</h1>
+			<h3>How To Play</h3>
+			<ol>
+			  <li>Player 1: Create a new game by entering the username</li>
+			  <li>Player 2: Enter another username </li>
+			  <li>Click on join game. </li>
+			</ol>
+			<h4>Create a new Game</h4>
+			<input type="text" name="name" id="nameNew" placeholder="Enter your name" required>
+			<button id="new">New Game</button>
+			<br><br>
+			<div id="joinTheGame">
+				<h4>Join an existing game</h4>
+				<input type="text" name="name" id="nameJoin" placeholder="Enter your name" required>
+				<button id="join">Join Game</button>
+			</div>
+		  </div>
+		</div>
+		<div class="">
+			<h2 id="userHello"></h2>
+		</div>
+		
+		<div class="gameBoard">  
+		  <h3 id="turn"></h3>
+		  <table class="center">
+			<tr>
+			  <td><button class="tile" id="button_00"></button></td>
+			  <td><button class="tile" id="button_01"></button></td>
+			  <td><button class="tile" id="button_02"></button></td>
+			</tr>
+			<tr>
+			  <td><button class="tile" id="button_10"></button></td>
+			  <td><button class="tile" id="button_11"></button></td>
+			  <td><button class="tile" id="button_12"></button></td>
+			</tr>
+			<tr>
+			  <td><button class="tile" id="button_20"></button></td>
+			  <td><button class="tile" id="button_21"></button></td>
+			  <td><button class="tile" id="button_22"></button></td>
+			</tr>
+		  </table>
+		</div>
+		
+	</body>
+</html>
